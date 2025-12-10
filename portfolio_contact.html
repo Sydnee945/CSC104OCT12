@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ~ Contact</title>
+
+    <link rel="stylesheet" href="portfolio_main.css">
+
+    <!-- For the final project, have 1 main, global CSS file; all the page should link to the same CSS file. You can include as many CSS files as needed in your HTML page. -->
+
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="divLogo">
+            <img src="./images/beach2.jpg" alt="Beach Logo" class="logo">
+        </div>
+
+        <div class="hamburger" id="divHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- menu for navigating the site -->
+         <nav class="nav-links" id="navLinks">
+            <a href="portfolio_home.html">Home</a>
+            <a href="portfolio_projects.html">Projects</a>
+            <a href="portfolio_contact.html">Contact</a>
+         </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me!</h1>
+
+        <form>
+            <div class="form-row">
+                <label for="txtName">Your Name:</label>
+                <input type="text" id="txtName" name="txtName" placeholder="Your Name">
+            </div>
+
+            <div class="form-row">
+                <label for="txtEmail">Email:</label>
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="yourname@domain.com">
+            </div>
+
+            <div class="form-row">
+                <label for="txtComments">Comments:</label>
+            </div>
+            <div class="form-row">
+                <textarea id="txtComments" name="txtComments" rows="10" cols="35"></textarea>
+            </div>
+            <div class="form-row">
+                <button>Send Message</button>
+            </div>
+        </form>
+
+        <table>
+            <!-- add in the caption to explain what the table is all about -->
+            <caption>My Contact Info</caption>
+            <!-- tr = table row; this will be our first row - the heading info -->
+            <tr>
+                <!-- th - table column heading; th can be vertical or horizontal  -->
+                <th scope="col">Type</th>
+                <th scope="col">Value</th>
+            </tr>
+            <tr>
+                <!-- td is table data - the column, cell, the data that we want to display-->
+                <td>Email</td>
+                <td>me@me.com</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>555-1212</td>
+            </tr>
+            <tr>
+                <td>Fax</td>
+                <td>555-1213</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>Contact me at myemail@me.com</p>
+    </footer>
+
+    <script>
+        // create a few variables that are nicknames/shortcuts to the hamburger part of our page
+        let hamburger = document.getElementById("divHamburger");
+        let nav = document.getElementById("navLinks");
+
+        // add an event handler
+        hamburger.addEventListener("click", () =>{
+            // if the menu is closed, open it, otherwise close the menu
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

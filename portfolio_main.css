@@ -1,0 +1,191 @@
+/* these body and menu styles are global to the site and would go in a main.css type file */
+body{
+    background-color: rgb(4, 4, 83);
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    color: rgb(206, 203, 203);
+}
+
+header{
+    color: rgb(4, 4, 83);
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 5px;
+}
+
+/* by specifying nav a, these styles will only apply to anchor tags within the nav section */
+nav a{
+    background-color: rgb(4, 4, 83);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: x-large;
+}
+
+/* add style(s) for when the mouse hovers over our nav menu */
+nav a:hover{
+    background-color: rgb(43, 43, 173); 
+}
+
+/* the hamburger menu styles for the smaller screens */
+
+ /* hide the hamburger menu on our larger screens */
+ .hamburger{
+    display: none;
+}
+
+/* media query for our smaller screens */
+@media (max-width: 768px){
+    .hamburger{
+        /* this will move the hamburger menu to the left side on a smaller screen */
+        order: 0;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger span{
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px;
+        background-color: rgb(63, 63, 63);
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(63, 63, 63);
+        color: white;
+        border-radius: 10px;
+        order: 1;
+        position: absolute;
+        left: 20px;
+        top: 60px;
+    }
+
+    .divLogo{
+        order: 2;
+    }
+
+    /* this in combination with our JavaScript code will allow us to open and close the menu */
+    .nav-links.open{
+        display: flex;
+    }
+
+    .nav-links a{
+        color: white;
+        background-color: rgb(63, 63, 63);
+    }
+}
+
+h2{
+    padding: 30px;
+}
+
+p{
+    padding: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex-column{
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+    color: navy;
+}
+
+.flex-column-alt{
+    padding: 10px;
+    margin: 10px;
+    max-width: 400px;
+    text-align: center;
+    background-color: rgb(3, 3, 39);
+    border-radius: 10px;
+    color: rgb(191, 191, 196);
+}
+
+.img-decorative{
+    width: 90%;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+/* form styling */
+form{
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-row{
+    margin: 20px;
+}
+
+label{
+    font-weight: bold;
+    font-size: large;
+}
+
+input, textarea{
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(43, 43, 173);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(67, 67, 180);
+}
+
+
+/* table styles */
+
+table{
+    padding: 10px;            
+}
+
+tr, td{
+    padding: 10px;
+}
