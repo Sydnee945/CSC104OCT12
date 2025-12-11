@@ -11,6 +11,7 @@
 
     <!-- For the final project, have 1 main, global CSS file; all the page should link to the same CSS file. You can include as many CSS files as needed in your HTML page. -->
 
+
 </head>
 <body>
     <header>
@@ -39,16 +40,63 @@
             </div>
         </div>
 
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Table of Contents</h1>
+    </header>
+
+    <main>
+        <!-- when you need to show information that would look good in Excel, a table is probably the best way to show that info -->
+        <table>
+            <!-- add in the caption to explain what the table is all about -->
+            <caption>What's in the Portfolio</caption>
+            <!-- tr = table row; this will be our first row - the heading info -->
+            <tr>
+                <!-- th - table column heading; th can be vertical or horizontal  -->
+                <th scope="col">Sections</th>
+                <th scope="col">What they Explain</th>
+            </tr>
+            <tr>
+                <!-- td is table data - the column, cell, the data that we want to display-->
+                <td>About Me</td>
+                <td>Explains who I am and my passion for Stained Glass</td>
+            </tr>
+            <tr>
+                <td>Projects</td>
+                <td>Stained Glass creations I designed and worked on</td>
+            </tr>
+            <tr>
+                <td> Contacts</td>
+                <td>Ways you are able to message me</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
+
+<div class="flex-container">
+            <article class="flex-column-alt">
+                <img src="images/Final CSC Picture.jpg" alt="Stained Glass" class="img-decorative">
+            </article>
+
         <div>
             <h2>My Name is Sydnee Williams </h2>
-            <p>I am a student at the University of Advancing Technology. </p>
+            <p>I am a student at the University of Advancing Technology One of favorite Hobby is making Stained Glass Projects. 
+                I started working on projects for an elective class in High School, and ever since, I started coming up with ideas
+            and designed them during my free time. I have done a variety of different projects, starting of simple with small 2D designs,
+            then moving to mosaics, and then to 3D objects like boxes. I want to create, share, and give my projects to those who would want
+        to puchase my work. I enjoy making them, and I hope they love the designs I make with the Stained Glass.</p>
         </div>
     </main>
-
-    <footer>
-        <p>You can email me at SWILLIAMS86936@uat.edu </p>
-    </footer>
-
+            
     <script>
         // create a few variables that are nicknames/shortcuts to the hamburger part of our page
         let hamburger = document.getElementById("divHamburger");
@@ -62,3 +110,4 @@
     </script>
 </body>
 </html>
+
